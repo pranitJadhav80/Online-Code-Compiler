@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>Ocean_Code</title>
+        <link rel="stylesheet" type="text/css" href="./styles.css" />
+    </head>
+    <body>
+        <div class = "header">
+            <h3><img src="logo.jpg" alt="logo" height="55px" width="55px"></h3>
+            <h1>OceanofCode</h1>
+            <!-- <h3><img src="logo.jpg" alt="logo" height="90px" width="90px"></h3> -->
+            <p>Code, Compile & Run</p>
+        </div>
+        <div class = "list">
+            <ul>
+                <li> <a href="\index.html">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class = "Options" >
+            <a href="\index.html" target="_blank"><img src="AddIcon.png" alt="New tab" height="40px" width="40px"></a>
+            <a href="#"><img src="saveimg.png" alt="Save" height="40px" width="40px" > </a>
+            <a href="#"><img src="optnicon.png" alt="Options" height="40px" width="40px"></a>
+        </div>
+        <div class="language_select">
+            <h2>Type Your Code</h2>
+            <select>
+                <option value="0">Python</option>
+                <option value="4">JavaScript</option>
+                <option value="7">C</option>
+                <option value="77">CPP</option>
+                <option value="8">Java</option>
+            </select>
+        </div>
+        
+        <div class="text_editor">
+            <div class="line_numbers">
+                <span>
+            </div>
+            <div class="code_area">
+                <textarea rows="15"># Write your code here print('Hello World');</textarea>
+            </div>
+        </div>
+        <div class="output">
+            <p></p>
+        </div>
+        <button class="button2">Compile</button>
+        <script src="./sandbox.js"></script>
+        <footer>
+            <div class="footer-content">
+                <h1>OceanOfCode</h1>
+                <p>Let's do some Coding! <br>OceanOfCode is a website where you can edit, compile and run your codes.</p>
+                <ul class="socials">
+                    <p>Follow Us</p>
+                    <li><a href="https://www.instagram.com/pranit_6231/"><i><img src="insta.png" alt="insta_id" height="30px" width="30px"></i></a></li>
+                    <li><a href="https://twitter.com/Pranit72947480"><i><img src="twitter.png" alt="twitte_id" height="30px" width="30px"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCAGN_gSshSjZbA9ZFB2dHbw"><i><img src="youtube.png" alt="youtube_id" height="35px" width="35px"></i></a></li>
+                    <li><a href="http://www.linkedin.com/in/pranit-jadhav-20ba9a207"><i class="linkedin_id"><img src="linkedin.png" alt="linked_id" height="30px" width="35px"></i></a></li>
+                 </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2022 <a href="/index.html">OceanOfCode</a>  </p>
+             </div>
+        </footer>
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>
